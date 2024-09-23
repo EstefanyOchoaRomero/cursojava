@@ -1,4 +1,5 @@
-public class  swaptwovariables2 {
+public class swaptwovariables2  
+ {
     public static void main(String[] args) {
     
         int Postal1 = 33211;

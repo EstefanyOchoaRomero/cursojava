@@ -1,18 +1,21 @@
-public class Variables {
+
+import java.util.Scanner;
+
+public class Userintro {
 
     public static void main(String[] args) {
 
-        
-        int edad = 32;
-        float salario = 3.18778f;
-       
-      
-        String emailsString = "tefaoch23";
-       
-        
+    Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Hola mi nombre es: " + name);
-        System.out.println("Mi edad es:" + edad);
-        
-        System.out.println("Mi email:" + emailsString + symbol + "gmail.com");
-      
+    System.out.println("ingrese un nombre: " );
+    String name = scanner.nextLine();
+    System.out.println("ingrese una edad: ");
+    int  edad = scanner.nextInt();
+    
+    System.out.println("ingrese una altura: ");
+    float  altura = scanner.nextFloat();
+
+    System.out.println( "Nombre: " + name + " edad: " + edad + " altura: " + altura);
+
+    }
+}
