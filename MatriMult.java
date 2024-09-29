@@ -24,13 +24,13 @@ public class MatriMult {
             for (int i = 0; i < f1; i++) {
                 for (int j = 0; j < c1; j++) {
                     System.out.println("introduce valor de: " + i + " " + j);
-                    m1[i][j] = sc.nextInt();
+                    m1[j][i] = sc.nextInt();
                 }
             }
             
             for (int i = 0; i < f1; i++) {
                 for (int j = 0; j < c1; j++) {
-                    System.out.print(m1[i][j] + " " );
+                    System.out.print(m1[j][i] + " " );
                 }
                     System.out.println();
             }
@@ -40,13 +40,13 @@ public class MatriMult {
             for (int i = 0; i < f2; i++) {
                 for (int j = 0; j < c2; j++) {
                     System.out.println("introduce valor de: " + i + " " + j);
-                    m2[i][j] = sc.nextInt();
+                    m2[j][i] = sc.nextInt();
                 }
             }
             
             for (int i = 0; i < f2; i++) {
                 for (int j = 0; j < c2; j++) {
-                    System.out.print(m2[i][j] + " " );
+                    System.out.print(m2[j][i] + " " );
                 }
                     System.out.println();
             }
@@ -57,7 +57,7 @@ public class MatriMult {
             for (int i = 0; i < f1; i++) {
                 for (int j = 0; j < c2; j++) {
                     for (int h = 0; h < c1; h++) {
-                        mr[i][j] += m1[i][h] * m2[h][j];
+                        mr[j][i] += m1[h][i] * m2[j][h];
 
 
                     }
@@ -67,7 +67,7 @@ public class MatriMult {
 
             for (int i = 0; i < f1; i++) {
                 for (int j = 0; j < c2; j++) {
-                    System.out.print(mr[i][j] + " " );
+                    System.out.print(mr[j][i] + " " );
                 }
                     System.out.println();
             }
